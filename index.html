@@ -11,14 +11,14 @@
 <body>
     <div class="container">
         <div class="row">
-            <div class="col-4"></div>
-            <div class="col-4 mt-5">
+            <div class="col-lg-4 col-md-12 col-sm-12"></div>
+            <div class="col-lg-4 col-md-12 col-sm-12 mt-5 text-center">
                 <input type="text" id="search" placeholder="enter city name">
                 <button onclick="fetchWeather()">Search</button>
-                <div class="mt-5" id="result"></div>
+                <div class="mt-5 text-center" id="result" style="display: flex;justify-content: center;"></div>
             </div>
                 
-            <div class="col-4"></div>
+            <div class="col-lg-4 col-md-12 col-sm-12"></div>
         </div>
     </div>
 </body>
@@ -41,7 +41,7 @@
 
           result.innerHTML=`
           <div class="card" style="width: 17rem;">
-            <div><img src="https://openweathermap.org/img/wn/${icon}@2x.png"></div>
+            <div class="bg-primary"><img src="https://openweathermap.org/img/wn/${icon}@2x.png"></div>
   <div class="card-header"><b>place name: </b>${city}</div>
   <ul class="list-group list-group-flush">
     <li class="list-group-item"><b>temp:</b> ${temp}</li>
